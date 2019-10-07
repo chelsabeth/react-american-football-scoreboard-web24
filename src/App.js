@@ -1,11 +1,14 @@
 //TODO: STEP 1 - Import the useState hook.
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
-
+  const [count, setCount] = useState(0);
+  const [countAway, setCountAway] = useState(0); 
+  // first one is the useState for the home counter, second is for the away
+  // want to set useState to 0 because that is what I want bothe counters to start at 
   return (
     <div className="container">
       <section className="scoreboard">

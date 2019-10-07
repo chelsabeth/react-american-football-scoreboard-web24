@@ -2,13 +2,12 @@
 import React from "react";
 import "./App.css";
 import Scoreboard from "./components/scoreboard";
-import Count from "./components/count";
+
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Scoreboard />
-      <Count />
     </div>
   );
 }
